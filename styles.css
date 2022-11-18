@@ -4,12 +4,6 @@
   color: dark;
 }
 
-.synopsis {
-  padding-left: 25%;
-  max-width: 50em;
-  margin-top: 20%;
-}
-
 footer {
   color: white;
   background-color: rgb(12, 12, 12);
@@ -21,63 +15,55 @@ footer {
   text-align: center;
 }
 
-@media (max-width:2000px) {
+
+.navbar {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+ }
+
+ @media (max-width:2000px) {
   .navbar {
-    background-color: transparent;
-    backdrop-filter: blur(20px);
-    color: rgba(0, 0, 0, 2);
-    font-weight: bold;
-  font-size: x-large;
-    
+    font-size: medium;  
   }
-
-
-  .card-text {
-    display: block;
-
-  }
-}
-
-
-@media (max-width:768px) {
-  .navbar {
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    font-size: larger;
-  }
-
-  .synopsis {
-
-   
-    font-size: small;
-    padding-right: 20%;
-    margin-right: 10%;
-  }
-
-  .card-text {
-    display: block;
-
-  }
-}
-
-@media (max-width:375px) {
-  .navbar {
-    flex: 1;
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    font-size: medium;
-
-  }
-  .synopsis {
-    margin-left: -15%;
-    margin-right: -15%;
-    background-color: transparent;
-    backdrop-filter: blur(7px);
-    color: rgba(0, 0, 0, 2);
+  .textt{
+    font-size: 2em;
   }
   .card-title {
-    font-size: smaller;
+    
+    font-size: 4em;
   }
+  
+  
+  }
+
+@media (max-width:800px) {
+.navbar {
+  font-size: medium;
+  
+}
+.card-title {
+  font-size: 2em;
+}
+.textt{
+  font-size: 1.3em;
+}
+
+}
+
+
+@media (max-width:450px) {
+  
+ .card-img-overlay{
+  font-size: small;
+ }
+ .navbar {
+  font-size: small;
+  
+ }
+ .textt{
+  font-size: 1em;
+}
+
 
 }
 
